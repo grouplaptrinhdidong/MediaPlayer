@@ -57,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/a" />
+                    android:src="@raw/dia1" />
             </LinearLayout>
 
             <LinearLayout
@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="500px"
                     android:layout_weight="1"
-                    android:src="@drawable/b" />
+                    android:src="@raw/dia1" />
             </LinearLayout>
 
             <LinearLayout
@@ -104,6 +104,8 @@
             android:layout_weight="1"
             android:text="Button"
             tools:text="Cá nhân"
+            android:textColor="@color/colorChuButton"
+            android:background="@color/colorNenButton"
         />
 
         <Button
@@ -112,6 +114,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Online"
+            android:textColor="@color/colorChuButton"
+            android:background="@color/colorNenButton"
             />
 
         <Button
@@ -120,6 +124,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Bài hát"
+            android:textColor="@color/colorChuButton"
+            android:background="@color/colorNenButton"
             />
 
         <Button

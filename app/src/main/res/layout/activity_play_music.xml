@@ -11,40 +11,73 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180px"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/txtTenBaiHat"
+        android:layout_weight="5"
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180px"
-            android:layout_weight="2"
-            android:text="Tên bài hát" />
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="150px"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:layout_weight="1">
-
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@raw/dia1"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="4"
+            android:orientation="vertical">
 
 
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30px"
+                    android:text="Song name"
+                    android:textAlignment="center"
+                    android:textSize="40px" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:text="00:00"
+                android:textSize="40px" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px"
+                android:layout_marginRight="20px"
+                android:textAlignment="viewEnd"
+                android:text="00:00"
+                android:textSize="40px" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="320px"
+        android:layout_height="150px"
         android:layout_weight="1">
 
         <ImageButton
@@ -52,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/shuffle"
+            app:srcCompat="@raw/shuffle"
             android:background="@null"/>
 
         <ImageButton
@@ -60,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/previous"
+            app:srcCompat="@raw/previous"
             android:background="@null"/>
 
         <ImageButton
@@ -68,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/play"
+            app:srcCompat="@drawable/pause"
             android:background="@null"/>
 
         <ImageButton
@@ -76,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/next"
+            app:srcCompat="@raw/next"
             android:background="@null"/>
 
         <ImageButton
@@ -84,7 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/replay"
+            app:srcCompat="@raw/replay"
             android:background="@null"/>
     </LinearLayout>
 </LinearLayout>
